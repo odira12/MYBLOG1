@@ -1,14 +1,13 @@
 // import React, { useState, useEffect } from "react";
 // import axios from "axios";
-import Bloglist from './Bloglist';
-import useFetch from "./useFetch";
-
+import UseFetch from "./UseFetch";
+import BlogList from "./BlogList";
 const Home = () => {
-  const blogs= useFetch("http://localhost:4000/blogs");
+  const {data}= UseFetch("http://localhost:4000/blogs");
   return (
     <div className="home" >
 
-      {blogs && <Bloglist blogs={blogs}title="All blogs"/>}
+      {data && <BlogList blogs={data} title="All blogs"/>}
     </div>
   );
 }

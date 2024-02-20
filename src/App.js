@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import Form from './Components/Form';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom/cjs/react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+import BlogDetails from './Components/BlogDetails';
 
 function App() {
   return (
@@ -23,11 +24,11 @@ function App() {
 
      </Route>
 
-     {/* <Route path ="/BlogDetails/:id">
+     <Route path ="/Blog-details/:id">
       <BlogDetails/>
       </Route>  
       
-      <Route path="*">
+      {/* <Route path="*">
       <NotFound/>
   </Route> */}
       </Switch>
